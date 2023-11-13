@@ -35,7 +35,7 @@ function adicionalinha(){
     linha += '</tr>';
     linhas += linha;
     }
-    
+
     inputNomeAtividade.value = '';
     inputNotaAtividade.valeu = '';
     
@@ -49,7 +49,7 @@ function atualizartabela(){
 function atualizamediafinal(){
     const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('mediafinalvalor').innerHTML = mediaFinal;
+    document.getElementById('mediafinalvalor').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('mediafinalresultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
